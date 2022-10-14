@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 1170px;
+            margin: 100px;
+        }
+        input[type="radio"] label{
+            margin-right: 50px;
+        }
+
+        button{
+            margin-top: 50px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+            <input id="json" type="radio" name="data" value="json" checked>
+            <label>Json</label>
+            <div style="display: inline; margin-right: 50px;"></div>
+            <input id="csv" type="radio" name="data" value="csv">
+            <label>CSV</label>
+            <br>
+            <button id="fetchData">Fetch Data</button>
+    </div>
+    
+    
+    <script>
+        const json = document.getElementById("json");
+        const csv = document.getElementById("csv");
+
+        const button = document.getElementById("fetchData");
+        button.addEventListener("click", (e) => {
+            e.preventDefault();
+
+        })
+    </script>
+</body>
+</html>
