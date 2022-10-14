@@ -3,11 +3,7 @@ import Player from "../player";
 
 export default async function fetchData() {
     try {
-        //const browser = await puppeteer.launch();
-        const browser = await puppeteer.launch({
-            executablePath: 'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe',
-            headless: false,
-        });
+        const browser = await puppeteer.launch();
         const page = await browser.newPage();
         await page.goto("https://www.sportstats.ca/display-results.xhtml?raceid=114430");
 
