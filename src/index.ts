@@ -4,10 +4,6 @@ import { parse } from "json2csv";
 
 const app = express();
 
-app.get("/", async function (req, res) {
-    res.send("Hello");
-});
-
 // ENDPONIT for retreiving json data
 app.get("/jsonData", async function(req, res) {
     try {

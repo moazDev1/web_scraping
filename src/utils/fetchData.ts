@@ -19,7 +19,7 @@ export default async function fetchData() {
             const text = pageLength?.textContent;
             const length = text?.substring(text.indexOf('/')+1, text.length).trim();
             
-            // for(let i=0; i<Number(length); i++) {
+            for(let i=0; i<Number(length); i++) {
                 try {
                     const pageData: Player[] = await new Promise(function(resolve, reject) {
                         setTimeout(() => {
@@ -51,7 +51,7 @@ export default async function fetchData() {
                 } catch (error) {
                     throw error;
                 }
-            //}
+            }
            return allData;
         });
 
